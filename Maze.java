@@ -370,9 +370,15 @@ private void addFrontierWalls(int x, int y, List<Edge> frontier) {
         if (edge.direction.equals("right")) {
             fromCell.rightWall = false;
             toCell.leftWall = false;
-        } else {
+        } else if (edge.direction.equals("left")) {
+            fromCell.leftWall = false;
+            toCell.rightWall = false;
+        } else if (edge.direction.equals("bottom")) {
             fromCell.bottomWall = false;
             toCell.topWall = false;
+        } else if (edge.direction.equals("top")) {
+            fromCell.topWall = false;
+            toCell.bottomWall = false;
         }
     }
 
