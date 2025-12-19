@@ -65,7 +65,7 @@ public class Maze extends JFrame {
 
     private JPanel createLegendPanel() {
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 5));
-        panel.setBorder(BorderFactory.createTitledBorder("Legend"));
+        panel.setBorder(BorderFactory.createTitledBorder("Notes"));
 
         addLegendItem(panel, "Start", new Color(76, 175, 80));
         addLegendItem(panel, "Exit", new Color(244, 67, 54));
